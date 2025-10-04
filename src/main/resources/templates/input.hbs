@@ -27,27 +27,28 @@
         <fieldset>
           <h2 class="sub-title">ご本人について</h2>
           <label>
-            氏名
-            <input type="text" name="kanjiName" value="{{userOrderForm.kanjiName}}"/>
+  氏名 <span style="color: red;">必須</span>
+  <input type="text" name="kanjiName" value="{{userOrderForm.kanjiName}}"  placeholder="例：山田　太郎">
+</label>
+          <label>
+            シメイ（フリガナ）<span style="color: red;">必須</span>
+            <input type="text" name="kanaName" value="{{userOrderForm.kanaName}}" placeholder="例：ヤマダ　タロウ">
           </label>
           <label>
-            シメイ（フリガナ）
-            <input type="text" name="kanaName" value="{{userOrderForm.kanaName}}"/>
+            生年月日 <span style="color: red;">必須</span>
+            <input type="text" name="dateOfBirth" value="{{userOrderForm.dateOfBirth}}" placeholder="例：1991/01/01"/></label>
+          <label>
+            住所 <span style="color: red;">必須</span>
+            <input type="text" name="address" value="{{userOrderForm.address}}" placeholder="例：○○県○○市○○町○-○" />
+          </label>
+
+          <label>
+            電話番号 <span style="color: red;">必須</span>
+            <input type="text" name="tel" value="{{userOrderForm.tel}}" placeholder="例：0123456789"/>
           </label>
           <label>
-            生年月日
-            <input type="text" name="dateOfBirth" value="{{userOrderForm.dateOfBirth}}"/></label>
-          <label>
-            住所
-            <input type="text" name="address" value="{{userOrderForm.address}}"/>
-          </label>
-          <label>
-            電話番号
-            <input type="text" name="tel" value="{{userOrderForm.tel}}"/>
-          </label>
-          <label>
-            メールアドレス
-            <input type="text" name="email" value="{{userOrderForm.email}}"/>
+            メールアドレス <span style="color: red;">必須</span>
+            <input type="text" name="email" value="{{userOrderForm.email}}" placeholder="例：aaa@tis.co.jp"/>
           </label>
         </fieldset>
         <fieldset>
